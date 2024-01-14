@@ -1,0 +1,158 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #1e202b;
+}
+
+main {
+  margin-top: -16rem;
+}
+
+.navbar {
+  background-color: #1e202b;
+}
+.nav-link {
+  color: #fff;
+  transition: all 0.3s;
+  font-size: 1.6rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link.active::before {
+  content: "";
+  border: 2px #009ad8 solid;
+  width: 140%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2rem;
+
+  position: absolute;
+}
+
+.navbar-nav .nav-link.active {
+  color: #009ad8;
+}
+
+.nav-link:hover {
+  color: #009ad8;
+}
+
+.input-field {
+  margin-bottom: 3rem;
+  background-image: url("../images/banner.png");
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 35rem;
+  padding-top: 10rem;
+}
+
+.input {
+  display: block;
+  background-color: #1e202b;
+  border-radius: 5rem;
+  padding: 2rem 2rem;
+  caret-color: #fff;
+  color: #fff;
+}
+
+.input::placeholder {
+  font-size: 1.6rem;
+}
+.btn-find {
+  font-size: 1.6rem;
+  position: absolute;
+  background-color: #009ad8;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 3rem;
+  padding: 1rem 4rem;
+}
+.btn-find:hover {
+  background-color: #009ad8;
+}
+
+.card {
+  color: #bfc1c8;
+}
+
+.card-header {
+  background-color: #2d303d;
+}
+.second-header {
+  background-color: #1d1f2a;
+}
+
+.location {
+  font-size: 1.8rem;
+}
+.temp {
+  font-size: 9rem;
+}
+
+.custom {
+  color: #009ad8;
+}
+
+.card-body {
+  background-color: #323544;
+  border-bottom-left-radius: 1.2rem;
+}
+
+.second-body {
+  background-color: #262936;
+}
+
+/* .forecast::before {
+  content: "";
+  background-color: #1e202b;
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  top: 50%;
+  left: 0;
+  right: 0;
+} */
+
+footer {
+  background-color: #262936;
+}
+
+.list-item {
+  cursor: pointer;
+  width: 3.8rem;
+  height: 3.8rem;
+  background-color: #222530;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+.list-item:hover {
+  background-color: #009ad8;
+}
+
+.list-item:hover a i {
+  color: #fff;
+}

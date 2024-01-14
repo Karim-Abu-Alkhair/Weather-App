@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg py-5">
+      <div class="container">
+        <a class="navbar-brand text-white d-flex gap-2" href="#">
+          <img src="images/logo.png" alt="" />
+          <span class="d-flex flex-column me-2">
+            <span class="fs-6">Weather</span>
+            <span class="fs-6">tagline goes here</span>
+          </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-5">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" aria-current="page" href="#">News</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" aria-current="page" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" aria-current="page" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="input-field">
+      <div class="container">
+        <div class="row">
+          <div class="col position-relative">
+            <input
+              type="text"
+              class="w-100 border-0 input city-input"
+              placeholder="Find your location..."
+            />
+            <button class="btn btn-find text-white">Find</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="mb-5">
+      <section class="weather">
+        <div class="container">
+          <div class="row forecast g-0"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="p-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8 position-relative">
+            <input
+              type="text"
+              class="w-100 border-0 input p-4"
+              placeholder="Enter your email to subscribe..."
+            />
+            <button class="btn btn-find text-white py-2 px-4">Subscribe</button>
+          </div>
+          <div class="col-md-3 offset-1">
+            <ul class="list d-flex gap-3">
+              <li
+                class="list-item d-flex align-items-center justify-content-center"
+              >
+                <a href="#" class="list-link"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+
+              <li
+                class="list-item d-flex align-items-center justify-content-center"
+              >
+                <a href="#" class="list-link"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li
+                class="list-item d-flex align-items-center justify-content-center"
+              >
+                <a href="#" class="list-link"
+                  ><i class="fa-brands fa-google-plus-g"></i
+                ></a>
+              </li>
+              <li
+                class="list-item d-flex align-items-center justify-content-center"
+              >
+                <a href="#" class="list-link"
+                  ><i class="fa-brands fa-pinterest"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <p class="text-light mt-4">Copyright &copy; Karim Ashraf</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/index.js
+    "></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
